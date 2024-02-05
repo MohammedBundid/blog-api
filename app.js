@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 4000
 app.use(express.json())
 app.use(logger('dev'));
 app.use(cors({
-    origin: 'http://localhost:5173, https://mohbundid.onrender.com'
+    origin: 'https://mohbundid.onrender.com'
 }))
 
 app.use('/api/blog', blogRoutes)
