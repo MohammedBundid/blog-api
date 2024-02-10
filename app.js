@@ -15,6 +15,10 @@ app.use(cors({
     origin: 'https://mohbundid.onrender.com'
 }))
 
+app.get('/keep-alive', (req, res) => {
+    console.log('server is keeping it real')
+})
+
 app.use('/api/blog', blogRoutes)
 
 const connectDb = async () => {
